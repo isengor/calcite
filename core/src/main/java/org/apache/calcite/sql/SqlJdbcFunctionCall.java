@@ -283,9 +283,9 @@ import static org.apache.calcite.util.Static.RESOURCE;
  * <td>An integer from 1 to 12 representing the month component of date</td>
  * </tr>
  * <tr>
- * <td>MONTHNAME(date)</td>
- * <td>A character string representing the month component of date; the name for
- * the month is specific to the data source</td>
+ * <td>ASCII(String)</td>
+ * <td>Convert a single-character string to the corresponding ASCII code,
+ * an integer between 0 and 255</td>
  * </tr>
  * <tr>
  * <td>NOW()</td>
@@ -711,6 +711,7 @@ public class SqlJdbcFunctionCall extends SqlFunction {
       map.put("YEAR", simple(SqlStdOperatorTable.YEAR));
       map.put("QUARTER", simple(SqlStdOperatorTable.QUARTER));
       map.put("MONTH", simple(SqlStdOperatorTable.MONTH));
+      map.put("ASCII", simple(SqlStdOperatorTable.ASCII));
       map.put("WEEK", simple(SqlStdOperatorTable.WEEK));
       map.put("DAYOFYEAR", simple(SqlStdOperatorTable.DAYOFYEAR));
       map.put("DAYOFMONTH", simple(SqlStdOperatorTable.DAYOFMONTH));

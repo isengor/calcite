@@ -1947,6 +1947,11 @@ public class SqlFunctions {
     return date;
   }
 
+  /** SQL {@code ASCII} function. */
+  public static int ascii(String s) {
+    return s.length();
+  }
+
   /** SQL {@code LOCAL_TIMESTAMP} function. */
   @NonDeterministic
   public static long localTimestamp(DataContext root) {

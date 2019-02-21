@@ -1798,6 +1798,12 @@ public class SqlStdOperatorTable extends ReflectiveSqlOperatorTable {
   public static final SqlFunction CURRENT_DATE =
       new SqlCurrentDateFunction();
 
+  /**
+   * The <code>ASCII</code> function.
+   */
+  public static final SqlFunction ASCII =
+          new SqlASCIIFunction();
+
   /** The <code>TIMESTAMPADD</code> function. */
   public static final SqlFunction TIMESTAMP_ADD = new SqlTimestampAddFunction();
 
